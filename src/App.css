@@ -557,22 +557,18 @@ a { text-decoration: none; color: inherit; }
 }
 
 /* ── D: Timeline card ── */
-.bento-timeline {
-  grid-column: 1;
-  grid-row: 3;
-  grid-column: 1 / -1 !important;
+.bento-timeline-section {
+  margin-top: 1rem;
   width: 100%;
-  margin-top: 16px;
 }
 .bento-timeline-header {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.75rem;
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-family: 'Syne', sans-serif;
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--text);
-  margin-bottom: 20px;
+  gap: 6px;
 }
 .timeline-list {
   display: flex;
@@ -580,55 +576,69 @@ a { text-decoration: none; color: inherit; }
   gap: 0;
 }
 .tl-item {
-  display: grid;
-  grid-template-columns: 12px 1px 1fr;
-  gap: 0 14px;
-  align-items: start;
-  padding-bottom: 18px;
-  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
 }
+
 .tl-item.last { padding-bottom: 0; }
 .tl-dot {
-  width: 12px; height: 12px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  margin-top: 4px;
   flex-shrink: 0;
-  box-shadow: 0 0 8px currentColor;
+  margin-top: 4px;
+}
+.tl-dot-wrap {
+  display: flex;
+  justify-content: center;
+  padding-top: 3px;
+}
+.tl-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 .tl-line {
-  width: 1px;
-  background: var(--border);
-  margin-top: 16px;
-  align-self: stretch;
-  min-height: 100%;
+  width: 2px;
+  background: var(--color-border-tertiary); /* atau warna line kamu */
+  margin: 0 auto;
 }
 .tl-item.last .tl-line { display: none; }
-.tl-content { padding-bottom: 2px; }
+
+.tl-content {
+  padding-bottom: 1.25rem;
+}
 .tl-role {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--text);
+  font-size: 15px;
+  font-weight: 500;
+}
+.tl-meta {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 4px;
 }
 
 .tl-separator {
-  color: var(--text-muted);
-  font-size: 0.7rem;
+  font-size: 11px;
+  color: var(--color-text-tertiary);
 }
 
 .tl-company {
-  font-weight: 500;
-  color: var(--accent);
+  font-size: 13px;
+  color: #3b82f6;
 }
 
 .tl-year {
-  font-weight: 400;
-  color: var(--text-dim);
-  font-size: 0.75rem;
+  font-size: 12px;
+  background: var(--color-background-secondary);
+  border: 0.5px solid var(--color-border-tertiary);
+  border-radius: 4px;
+  padding: 1px 7px;
 }
+
 .tl-place {
   font-size: 0.75rem;
   color: var(--text-muted);
@@ -1856,6 +1866,15 @@ a { text-decoration: none; color: inherit; }
   border-radius: 16px;
   padding: 32px;
 }
+.bento-timeline-inner {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  /* bento-card sudah punya border & border-radius,
+     jadi cukup tambahkan ini saja */
+  box-sizing: border-box;
+}
+
 
 /* Responsive modal */
 @media (max-width: 600px) {

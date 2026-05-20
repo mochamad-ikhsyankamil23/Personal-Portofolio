@@ -4,111 +4,132 @@ import profilePhoto from "./assets/profile.jpg";
 
 // ── DATA ──────────────────────────────────────────────────────────────────────
 const SKILLS = [
-  { name: "HTML5",      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
-  { name: "CSS3",       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+  { name: "HTML5", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+  { name: "CSS3", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
   { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
   { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
-  { name: "React",      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-  { name: "Vue.js",     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" },
-  { name: "Node.js",    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
-  { name: "Laravel",    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" },
-  { name: "MySQL",      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
-  { name: "MongoDB",    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
-  { name: "Git",        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
-  { name: "Figma",      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
-  { name: "Tailwind",   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" },
-  { name: "Next.js",    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
+  { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+  { name: "Vue.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" },
+  { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+  { name: "Laravel", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" },
+  { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+  { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+  { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+  { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
+  { name: "Tailwind", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" },
+  { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
 ];
 
 // ── CERTIFICATES DATA (MICRO CERTIFICATES) ─────────────────────────────────────────
 const CERTIFICATES = [
   {
     id: 1,
-    title:  "Soft Skills Score Card",
-    issuer: " Wadwhani Foundation", 
-    year:   "2026",
-    color:  "#6366f1",
-    image:  "/certificates/JobReady-EmployabilitySkills.jpg", 
+    title: "Soft Skills Score Card",
+    issuer: "Wadwhani Foundation",
+    year: "2026",
+    color: "#6366f1",
+    image: "/certificates/JobReady-EmployabilitySkills.jpg",
     subCerts: [
-      { id: "1-1", title: "JobReady-EmployabilitySkills",                  image: "/certificates/JobReady-EmployabilitySkills.jpg" },
-      { id: "1-2", title: "Impact Writing Skills",                         image: "/certificates/Impact Writing Skills.jpg" },
-      { id: "1-3", title: "Interpersonal Skills",                          image: "/certificates/Interpersonal Skills.jpg" },
-      { id: "1-4", title: "Work Productivity Tools",                       image: "/certificates/Work Productivity Tools.jpg" },
-      { id: "1-5", title: "OnlineCommuni&DataSecurity",                    image: "/certificates/OnlineCommuni&DataSecurity.jpg" },
-      { id: "1-6", title: "Problem Solving & Innovation",                  image: "/certificates/Problem Solving & Innovation.jpg" },
-      { id: "1-7", title: "Proffessionalism",                              image: "/certificates/Proffessionalism.jpg" },
-      { id: "1-8", title: "Self-Management",                               image: "/certificates/Self-Management.jpg" },
-      { id: "1-9", title: "Self-Presentation",                             image: "/certificates/Self-Presentation.jpg" },
-      { id: "1-10", title: "Customer Centricity",                          image: "/certificates/Customer Centricity.jpg" },
-      { id: "1-11", title: "Speaking and Listening Skillsy",               image: "/certificates/Speaking and Listening Skills.jpg" },
-      { id: "1-12", title: "SkillsScoreCard",                              image: "/certificates/SkillsScoreCard.jpg" },
+      { id: "1-1", title: "JobReady-EmployabilitySkills", image: "/certificates/JobReady-EmployabilitySkills.jpg" },
+      { id: "1-2", title: "Impact Writing Skills", image: "/certificates/Impact Writing Skills.jpg" },
+      { id: "1-3", title: "Interpersonal Skills", image: "/certificates/Interpersonal Skills.jpg" },
+      { id: "1-4", title: "Work Productivity Tools", image: "/certificates/Work Productivity Tools.jpg" },
+      { id: "1-5", title: "OnlineCommuni&DataSecurity", image: "/certificates/OnlineCommuni&DataSecurity.jpg" },
+      { id: "1-6", title: "Problem Solving & Innovation", image: "/certificates/Problem Solving & Innovation.jpg" },
+      { id: "1-7", title: "Proffessionalism", image: "/certificates/Proffessionalism.jpg" },
+      { id: "1-8", title: "Self-Management", image: "/certificates/Self-Management.jpg" },
+      { id: "1-9", title: "Self-Presentation", image: "/certificates/Self-Presentation.jpg" },
+      { id: "1-10", title: "Customer Centricity", image: "/certificates/Customer Centricity.jpg" },
+      { id: "1-11", title: "Speaking and Listening Skillsy", image: "/certificates/Speaking and Listening Skills.jpg" },
+      { id: "1-12", title: "SkillsScoreCard", image: "/certificates/SkillsScoreCard.jpg" },
     ],
   },
   {
     id: 2,
-    title:  "Secure Code ",
+    title: "Secure Code",
     issuer: "PT. Sinergi Cakrawala Indonesia",
-    year:   "2026",
-    color:  "#0ea5e9",
-    image:  "/certificates/PT. SCI/Secure Code by SCI.jpg",
+    year: "2026",
+    color: "#0ea5e9",
+    image: "/certificates/PT. SCI/Secure Code by SCI.jpg",
     subCerts: [
-      { id: "2-1", title: "Secure Code ",    image: "/certificates/PT. SCI/Secure Code by SCI.jpg" },
+      { id: "2-1", title: "Secure Code ", image: "/certificates/PT. SCI/Secure Code by SCI.jpg" },
     ],
   },
   {
     id: 3,
-    title:  "Java ",
+    title: "Java",
     issuer: "Dicoding",
-    year:   "2024",
-    color:  "#10b981",
-    image:  "/certificates/Dicoding/DICODING-JAVA_00001.jpg",
+    year: "2024",
+    color: "#10b981",
+    image: "/certificates/Dicoding/DICODING-JAVA_0001.jpg",
     subCerts: [
-      { id: "3-1", title: "Java Programming",       image: "/certificates/Dicoding/DICODING-JAVA_00001.jpg" },
+      { id: "3-1", title: "Java Programming", image: "/certificates/Dicoding/DICODING-JAVA_0001.jpg" },
     ],
   },
   {
     id: 4,
-    title:  "Surat Keterangan PKL",
+    title: "Surat Keterangan PKL",
     issuer: "PT. Tirta Investama (Danone Aqua)",
-    year:   "2025",
-    color:  "#f59e0b",
-    image:  "/certificates/PT. Tirta Investama/Surat Keterangan PKL.jpg",
+    year: "2025",
+    color: "#f59e0b",
+    image: "/certificates/PT. Tirta Investama/Surat Keterangan PKL.jpg",
     subCerts: [
-      { id: "4-1", title: "PT. Tirta Investama (Danone Aqua)",               image: "/certificates/PT. Tirta Investama/Surat Keterangan PKL.jpg" },
+      { id: "4-1", title: "PT. Tirta Investama (Danone Aqua)", image: "/certificates/PT. Tirta Investama/Surat Keterangan PKL.jpg" },
     ],
   },
   {
     id: 5,
-    title:  "Front-End Pemula",
+    title: "Front-End Pemula",
     issuer: "Dicoding",
-    year:   "2026",
-    color:  "#ef4444",
-    image:  "/certificates/Dicoding/DICODING-FRONT-END_0002.jpg",
+    year: "2026",
+    color: "#ef4444",
+    image: "/certificates/Dicoding/DICODING-FRONT-END_0002.jpg",
     subCerts: [
-      { id: "5-1", title: "Front-End Pemula",              image: "/certificates/Dicoding/DICODING-FRONT-END_0002.jpg" },
+      { id: "5-1", title: "Front-End Pemula", image: "/certificates/Dicoding/DICODING-FRONT-END_0002.jpg" },
     ],
   },
   {
     id: 6,
-    title:  "Dasar Pemograman",
+    title: "Dasar Pemograman",
     issuer: "Dicoding",
-    year:   "2026",
-    color:  "#8b5cf6",
-    image:  "/certificates/Dicoding/DICODING-DASAR-PEMOGRAMAN_0003.jpg",
+    year: "2026",
+    color: "#8b5cf6",
+    image: "/certificates/Dicoding/DICODING-DASAR-PEMOGRAMAN_0003.jpg",
     subCerts: [
       { id: "6-1", title: "Dasar Pemograman", image: "/certificates/Dicoding/DICODING-DASAR-PEMOGRAMAN_0003.jpg" },
-
     ],
   },
-   {
+  {
     id: 7,
-    title:  "Financial Literacy",
+    title: "Financial Literacy",
     issuer: "Dicoding",
-    year:   "2026",
-    color:  "#8b5cf6",
-    image:  "/certificates/Dicoding/DICODING-FINANCIAL-LITERACY_0004.jpg",
+    year: "2026",
+    color: "#8b5cf6",
+    image: "/certificates/Dicoding/DICODING-FINANCIAL-LITERACY_0004.jpg",
     subCerts: [
       { id: "7-1", title: "Financial Literacy", image: "/certificates/Dicoding/DICODING-FINANCIAL-LITERACY_0004.jpg" },
+    ],
+  },
+  {
+    id: 8,
+    title: "Pemograman SOLID",
+    issuer: "Dicoding",
+    year: "2026",
+    color: "#ef4444",
+    image: "/certificates/Dicoding/DICODING-PRINSIP-PEMOGRAMAN-SOLID_0005.jpg",
+    subCerts: [
+      { id: "8-1", title: "Pemograman SOLID", image: "/certificates/Dicoding/DICODING-PRINSIP-PEMOGRAMAN-SOLID_0005.jpg" },
+    ],
+  },
+  {
+    id: 9,
+    title: "Dasar Manajement Project",
+    issuer: "DICODING",
+    year: "2026",
+    color: "#f59e0b",
+    image: "/certificates/Dicoding/DICODING-DASAR-MANAJEMENT-PROJECT_0006.jpg",
+    subCerts: [
+      { id: "9-1", title: "Dasar Manajement Project", image: "/certificates/Dicoding/DICODING-DASAR-MANAJEMENT-PROJECT_0006.jpg" },
     ],
   },
 ];
@@ -117,50 +138,50 @@ const PROJECTS = [
   {
     id: 1,
     title: "E-Ticketing App",
-    desc:  "Platform belanja online full-stack dengan fitur cart, payment gateway, dan dashboard admin real-time.",
-    tags:  ["Laravel", "MySQL"],
+    desc: "Platform belanja online full-stack dengan fitur cart, payment gateway, dan dashboard admin real-time.",
+    tags: ["Laravel", "MySQL"],
     color: "#6366f1",
-    link:  "#",
+    link: "#",
   },
   {
     id: 2,
     title: "Inventaris Barang",
-    desc:  "Aplikasi manajemen inventaris dengan fitur pencatatan, pelacakan, dan laporan. Sekaligus sebagai Tugas Ujian Kenaikan Kelas XII di SMK Wikrama Bogor.",
-    tags:  ["Laravel", "MySQL"],
+    desc: "Aplikasi manajemen inventaris dengan fitur pencatatan, pelacakan, dan laporan. Sekaligus sebagai Tugas Ujian Kenaikan Kelas XII di SMK Wikrama Bogor.",
+    tags: ["Laravel", "MySQL"],
     color: "#0ea5e9",
-    link:  "#",
+    link: "#",
   },
   {
     id: 3,
     title: "E-commerce Interface",
-    desc:  "Antarmuka e-commerce dengan fitur produk, keranjang belanja, dan checkout.",
-    tags:  ["Dart","Flutter" ],
+    desc: "Antarmuka e-commerce dengan fitur produk, keranjang belanja, dan checkout.",
+    tags: ["Dart", "Flutter"],
     color: "#10b981",
-    link:  "#",
+    link: "#",
   },
   {
     id: 4,
     title: "Perpustakaan Digital",
-    desc:  "Dashboard analitik interaktif dengan grafik real-time, export PDF, dan filter data dinamis.",
-    tags:  ["Laravel", "MySQL"],
+    desc: "Dashboard analitik interaktif dengan grafik real-time, export PDF, dan filter data dinamis.",
+    tags: ["Laravel", "MySQL"],
     color: "#f59e0b",
-    link:  "#",
+    link: "#",
   },
   {
     id: 5,
     title: "Peduli sampah",
-    desc:  "web app untuk memantau dan mengelola sampah dibank sampah ",
-    tags:  ["Laravel", "MySQL", "tailwind"],
+    desc: "web app untuk memantau dan mengelola sampah dibank sampah",
+    tags: ["Laravel", "MySQL", "tailwind"],
     color: "#ef4444",
-    link:  "#",
+    link: "#",
   },
   {
     id: 6,
     title: "Portfolio",
-    desc:  "Portofolio pribadi dengan desain responsif, animasi halus, dan integrasi API GitHub untuk menampilkan repositori terbaru.",
-    tags:  ["React", "CSS"],
+    desc: "Portofolio pribadi dengan desain responsif, animasi halus, dan integrasi API GitHub untuk menampilkan repositori terbaru.",
+    tags: ["React", "CSS"],
     color: "#8b5cf6",
-    link:  "#",
+    link: "#",
   },
 ];
 
@@ -168,12 +189,12 @@ const PROJECTS = [
 function getCertSlides(cert) {
   if (cert.subCerts && cert.subCerts.length > 0) {
     return cert.subCerts.map((sc) => ({
-      id:     sc.id,
-      title:  sc.title,
+      id: sc.id,
+      title: sc.title,
       issuer: cert.issuer,
-      year:   cert.year,
-      color:  cert.color,
-      image:  sc.image,
+      year: cert.year,
+      color: cert.color,
+      image: sc.image,
     }));
   }
   return [{ id: cert.id, title: cert.title, issuer: cert.issuer, year: cert.year, color: cert.color, image: cert.image }];
@@ -227,7 +248,7 @@ function SkillCarousel() {
 function CertCard({ cert, index, onClick }) {
   const [imgErr, setImgErr] = useState(false);
   const hasGroup = cert.subCerts && cert.subCerts.length > 0;
-  const count    = hasGroup ? cert.subCerts.length : 1;
+  const count = hasGroup ? cert.subCerts.length : 1;
 
   return (
     <div
@@ -237,8 +258,6 @@ function CertCard({ cert, index, onClick }) {
     >
       <div className="cc-thumb">
         <div className="cc-bar" style={{ background: cert.color }} />
-
-
 
         {cert.image && !imgErr ? (
           <>
@@ -256,8 +275,10 @@ function CertCard({ cert, index, onClick }) {
 
         <div className="cc-hover-btn">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/>
-            <line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/>
+            <polyline points="15 3 21 3 21 9" />
+            <polyline points="9 21 3 21 3 15" />
+            <line x1="21" y1="3" x2="14" y2="10" />
+            <line x1="3" y1="21" x2="10" y2="14" />
           </svg>
           <span style={{ fontSize: "0.75rem", marginLeft: 6 }}>
             {hasGroup ? `Lihat ${count} Micro Sertifikat` : "Buka"}
@@ -276,7 +297,8 @@ function CertCard({ cert, index, onClick }) {
         </div>
         <div className="cc-arrow" style={{ background: `${cert.color}20`, color: cert.color }}>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-            <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
+            <line x1="7" y1="17" x2="17" y2="7" />
+            <polyline points="7 7 17 7 17 17" />
           </svg>
         </div>
       </div>
@@ -286,8 +308,8 @@ function CertCard({ cert, index, onClick }) {
 
 // ── ZOOM IMAGE COMPONENT ───────────────────────────────────────────────────────
 function ZoomableImage({ src, alt, onError }) {
-  const [zoom,    setZoom]    = useState(1);
-  const [pos,     setPos]     = useState({ x: 0, y: 0 });
+  const [zoom, setZoom] = useState(1);
+  const [pos, setPos] = useState({ x: 0, y: 0 });
   const [dragging, setDragging] = useState(false);
   const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
   const imgRef = useRef(null);
@@ -300,7 +322,7 @@ function ZoomableImage({ src, alt, onError }) {
     if (zoom <= 1) setPos({ x: 0, y: 0 });
   }, [zoom]);
 
-  const zoomIn  = () => setZoom((z) => clamp(z + 0.4, 1, 4));
+  const zoomIn = () => setZoom((z) => clamp(z + 0.4, 1, 4));
   const zoomOut = () => {
     const next = Math.max(1, zoom - 0.4);
     setZoom(next);
@@ -328,7 +350,9 @@ function ZoomableImage({ src, alt, onError }) {
       <div className="zoom-controls">
         <button className="zoom-btn" onClick={zoomOut} title="Zoom Out">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="8" y1="11" x2="14" y2="11"/>
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            <line x1="8" y1="11" x2="14" y2="11" />
           </svg>
         </button>
         <button className="zoom-btn zoom-pct" onClick={zoomReset} title="Reset Zoom">
@@ -336,7 +360,10 @@ function ZoomableImage({ src, alt, onError }) {
         </button>
         <button className="zoom-btn" onClick={zoomIn} title="Zoom In">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            <line x1="11" y1="8" x2="11" y2="14" />
+            <line x1="8" y1="11" x2="14" y2="11" />
           </svg>
         </button>
       </div>
@@ -357,10 +384,10 @@ function ZoomableImage({ src, alt, onError }) {
           className="cm-img"
           onError={onError}
           style={{
-            transform:     `translate(${pos.x}px, ${pos.y}px) scale(${zoom})`,
+            transform: `translate(${pos.x}px, ${pos.y}px) scale(${zoom})`,
             transformOrigin: "center center",
-            transition:    dragging ? "none" : "transform 0.15s ease",
-            userSelect:    "none",
+            transition: dragging ? "none" : "transform 0.15s ease",
+            userSelect: "none",
             pointerEvents: "none",
           }}
           draggable={false}
@@ -376,29 +403,28 @@ function ZoomableImage({ src, alt, onError }) {
 
 // ── CERT MODAL (DENGAN MICRO CERTIFICATE VIEW) ─────────────────────────────────────────────────
 function CertModal({ cert, onClose }) {
-  const slides    = getCertSlides(cert);
+  const slides = getCertSlides(cert);
   const [current, setCurrent] = useState(0);
-  const [imgErr,  setImgErr]  = useState({});
-  const activeSl  = slides[current];
+  const [imgErr, setImgErr] = useState({});
+  const activeSl = slides[current];
 
   useEffect(() => {
     const onKey = (e) => {
-      if (e.key === "Escape")    onClose();
+      if (e.key === "Escape") onClose();
       if (e.key === "ArrowRight") setCurrent((p) => (p + 1) % slides.length);
-      if (e.key === "ArrowLeft")  setCurrent((p) => (p - 1 + slides.length) % slides.length);
+      if (e.key === "ArrowLeft") setCurrent((p) => (p - 1 + slides.length) % slides.length);
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [onClose, slides.length]);
 
   const markErr = (id) => setImgErr((prev) => ({ ...prev, [id]: true }));
-  const hasImg  = activeSl.image && !imgErr[activeSl.id];
+  const hasImg = activeSl.image && !imgErr[activeSl.id];
   const isGroup = slides.length > 1;
 
   return (
     <div className="cm-overlay" onClick={onClose}>
       <div className="cm-box" onClick={(e) => e.stopPropagation()}>
-
         {/* HEAD */}
         <div className="cm-head" style={{ "--cc": activeSl.color }}>
           <div className="cm-head-left">
@@ -408,11 +434,11 @@ function CertModal({ cert, onClose }) {
             >
               🏆 {cert.issuer}
             </div>
-            
           </div>
           <button className="cm-close" onClick={onClose}>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"strokeWidth="2.5">
-              <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
             </svg>
           </button>
         </div>
@@ -456,7 +482,7 @@ function CertModal({ cert, onClose }) {
                 onClick={(e) => { e.stopPropagation(); setCurrent((p) => (p - 1 + slides.length) % slides.length); }}
               >
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                  <polyline points="15 18 9 12 15 6"/>
+                  <polyline points="15 18 9 12 15 6" />
                 </svg>
               </button>
               <button
@@ -464,7 +490,7 @@ function CertModal({ cert, onClose }) {
                 onClick={(e) => { e.stopPropagation(); setCurrent((p) => (p + 1) % slides.length); }}
               >
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                  <polyline points="9 18 15 12 9 6"/>
+                  <polyline points="9 18 15 12 9 6" />
                 </svg>
               </button>
             </>
@@ -515,7 +541,6 @@ function CertModal({ cert, onClose }) {
             })}
           </div>
         )}
-
       </div>
     </div>
   );
@@ -543,7 +568,8 @@ function ProjectCard({ project }) {
         <a href={project.link} className="project-link">
           Lihat Proyek
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-            <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
+            <line x1="7" y1="17" x2="17" y2="7" />
+            <polyline points="7 7 17 7 17 17" />
           </svg>
         </a>
       </div>
@@ -553,7 +579,7 @@ function ProjectCard({ project }) {
 
 // ── EMAIL FORM ─────────────────────────────────────────────────────────────────
 function ContactForm() {
-  const [form,    setForm]   = useState({ name: "", email: "", subject: "", message: "" });
+  const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
   const [status, setStatus] = useState("idle");
 
   const handleChange = (e) => setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -602,7 +628,8 @@ function ContactForm() {
         {status === "idle" && (
           <>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
-              <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              <line x1="22" y1="2" x2="11" y2="13" />
+              <polygon points="22 2 15 22 11 13 2 9 22 2" />
             </svg>
             Kirim Pesan
           </>
@@ -611,7 +638,7 @@ function ContactForm() {
         {status === "success" && (
           <>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-              <polyline points="20 6 9 17 4 12"/>
+              <polyline points="20 6 9 17 4 12" />
             </svg>
             Terkirim! Cek email client kamu
           </>
@@ -630,10 +657,10 @@ function ContactForm() {
 
 // ── MAIN APP ───────────────────────────────────────────────────────────────────
 export default function App() {
-  const [active,    setActive]    = useState("home");
+  const [active, setActive] = useState("home");
   const [certModal, setCertModal] = useState(null);
-  const [menuOpen,  setMenuOpen]  = useState(false);
-  const [scrolled,  setScrolled]  = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -648,9 +675,9 @@ export default function App() {
   };
 
   const navItems = [
-    { id: "home",       label: "Home" },
-    { id: "about",      label: "About" },
-    { id: "portfolio",  label: "Portofolio" },
+    { id: "home", label: "Home" },
+    { id: "about", label: "About" },
+    { id: "portfolio", label: "Portofolio" },
     { id: "sertifikat", label: "Sertifikat" },
   ];
 
@@ -661,7 +688,6 @@ export default function App() {
 
   return (
     <div className="app">
-
       {/* NAVBAR */}
       <nav className={`navbar ${scrolled ? "navbar--scrolled" : ""}`}>
         <div className="nav-inner">
@@ -681,7 +707,7 @@ export default function App() {
               </li>
             ))}
           </ul>
-          <button className="nav-contact-btn" onClick={() => scrollTo("about")}>
+          <button className="nav-contact-btn" onClick={() => scrollTo("contact")}>
             Hubungi Saya
           </button>
           <button className="hamburger" onClick={() => setMenuOpen((v) => !v)}>
@@ -707,7 +733,7 @@ export default function App() {
           </p>
           <div className="hero-actions">
             <button className="btn-primary" onClick={() => scrollTo("portfolio")}>Lihat Karya Saya</button>
-            <button className="btn-ghost"   onClick={() => scrollTo("sertifikat")}>Sertifikasi</button>
+            <button className="btn-ghost" onClick={() => scrollTo("sertifikat")}>Sertifikasi</button>
           </div>
         </div>
 
@@ -739,39 +765,34 @@ export default function App() {
               </div>
               <div className="bento-divider" />
               <div className="bento-social-col">
-                <a href="https://github.com" target="_blank" rel="noreferrer" className="bento-social-link">
+                <a href="https://github.com/mochamad-ikhsyankamil23" target="_blank" rel="noreferrer" className="bento-social-link">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                    <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
                   </svg>
                   <span>GitHub</span>
                 </a>
                 <a href="https://www.linkedin.com/public-profile/settings/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact_info%3B8DkwL2WESkygEtzqZEE11A%3D%3D" target="_blank" rel="noreferrer" className="bento-social-link">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                   </svg>
                   <span>LinkedIn</span>
                 </a>
               </div>
-              <div className="bento-card bento-timeline" style={{ gridColumn: '1 / -1' }}>
-                <div className="bento-timeline-header">
-                  <span>📅</span> Path Career
+
+              {/* Ganti div.bento-timeline-section menjadi ini */}
+              <div className="bento-card bento-timeline-inner">
+                <div className="bento-timeline-header" style={{ justifyContent: 'center' }}>
+                  Path Career
                 </div>
-                <div className="timeline-list">  
-                  <div className="tl-item last">
+                <div className="tl-item">
                   <div className="tl-dot" style={{ background: "#10b981" }}></div>
-                  <div className="tl-line"></div>
-                  <div className="tl-content">
-                    <div className="tl-role">
-                      Junior Web Developer
-                      <span className="tl-separator">•</span>
-                      <span className="tl-company">PT. Tirta Investama</span>
-                      <span className="tl-separator">•</span>
-                      <span className="tl-year">2025</span>
-                    </div>
+                  <div className="tl-body">
+                    <div className="tl-role">Junior Web Developer</div>
+                    <div className="tl-company">PT. Tirta Investama</div>
+                    <div className="tl-year">2025</div>
                   </div>
                 </div>
-                </div>
-              </div> 
+              </div>
             </div>
 
             <div className="bento-card bento-bio">
@@ -781,51 +802,36 @@ export default function App() {
               <h3 className="bento-bio-text">
                 Saya adalah seorang Fresh Graduate jurusan Pengembangan Perangkat Lunak dan Gim (PPLG) dari SMK Wikrama Bogor,
                 sekolah yang terkenal dengan kedisiplinan dan kurikulum berbasis industri. Selama masa sekolah, saya telah membangun berbagai proyek aplikasi web,
-                menguasai logika pemrograman yang kuat, serta terbiasa bekerja dalam 
+                menguasai logika pemrograman yang kuat, serta terbiasa bekerja dalam
                 tim menggunakan metodologi Agile. Berbasis di Bogor, saya siap membawa keterampilan teknis dan etos kerja profesional saya untuk berkembang bersama perusahaan teknologi dan startup inovatif.
               </h3>
-              <div className="bento-stats-row">
-                <div className="bento-stat-sep"></div>
-                <div className="bento-stat">
-                  <strong>10+</strong>
-                  <span>Projects</span>
+            </div>
+
+            <div className="bento-card bento-info">
+              <div className="bento-info-sep"></div>
+              <div className="bento-info-tile">
+                <span>💼</span>
+                <div>
+                  <div className="bit-label">Status</div>
+                  <div className="bit-val green">Ready For Work</div>
                 </div>
-                <div className="bento-stat-sep"></div>
-                <div className="bento-stat">
-                  <strong>5+</strong>
-                  <span>Certificates</span>
+              </div>
+              <div className="bento-info-sep"></div>
+              <div className="bento-info-tile">
+                <span>🎓</span>
+                <div>
+                  <div className="bit-label">Pendidikan</div>
+                  <div className="bit-val">SMK WIKRAMA BOGOR - Pemograman Perangkat Lunak dan Gim</div>
+                </div>
+              </div>
+              <div className="bento-info-tile">
+                <span>📍</span>
+                <div>
+                  <div className="bit-label">Lokasi</div>
+                  <div className="bit-val">Cigombong, Kabupaten Bogor, Jawa Barat, Indonesia</div>
                 </div>
               </div>
             </div>
-
-               <div className="bento-card bento-info">
-                
-                <div className="bento-info-sep"></div>
-                <div className="bento-info-tile">
-                  <span>💼</span>
-                  <div>
-                    <div className="bit-label">Status</div>
-                    <div className="bit-val green">Tersedia untuk Bekerja</div>
-                  </div>
-                </div>
-                
-                <div className="bento-info-sep"></div>
-                <div className="bento-info-tile">
-                  <span>🎓</span>
-                  <div>
-                    <div className="bit-label">Pendidikan</div>
-                    <div className="bit-val">SMK WIKRAMA BOGOR - Pemograman Perangkat Lunak dan Gim</div>
-                  </div>
-                </div>
-
-                <div className="bento-info-tile">
-                  <span>📍</span>
-                  <div>
-                    <div className="bit-label">Lokasi</div>
-                    <div className="bit-val">Cigombong, Kabupaten Bogor, Jawa Barat, Indonesia</div>
-                  </div>
-                </div>
-              </div>
 
             <div className="bento-card bento-stack">
               <div className="bento-stack-header">
@@ -855,7 +861,7 @@ export default function App() {
         <div className="container">
           <div className="section-label">— Sertifikasi & Micro Credentials</div>
           <h2 className="section-title">Kredensial <span className="gradient-text">Profesional</span></h2>
-          
+
           <div className="cert-section-head">
             <p className="section-sub">Menampilkan seluruh sertifikat dari berbagai institusi.</p>
           </div>
@@ -868,58 +874,60 @@ export default function App() {
         </div>
       </section>
 
-      {/* CONTACT */}
-      <section className="section contact-section">
-  <div className="contact-left">
-    <div className="section-label">— Hubungi</div>
-    <h2 className="contact-title">Mari <span className="gradient-text">Bekerja Sama</span></h2>
-    <p className="contact-desc">
-      Punya proyek menarik? Atau hanya ingin ngobrol santai tentang teknologi? 
-      Saya selalu terbuka untuk diskusi dan kolaborasi baru.
-    </p>
-    <div className="contact-info-list">
-      <div className="contact-info-item">
-        <div className="ci-icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <rect x="2" y="4" width="20" height="16" rx="2"/><line x1="22" y1="7" x2="12" y2="13"/><line x1="2" y1="7" x2="12" y2="13"/>
-          </svg>
-        </div>
-        <div>
-          <div className="ci-label">Email</div>
-          <div className="ci-val">mochamadikhsyankamil@gmail.com</div>
-        </div>
-      </div>
-      
-      <div className="contact-info-item">
-        <div className="ci-icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.574 2.81.7A2 2 0 0 1 22 16.92z"/>
-          </svg>
-        </div>
-        <div>
-          <div className="ci-label">Telepon</div>
-          <div className="ci-val">+62 89538 3385 800</div>
-        </div>
-      </div>
+        {/* CONTACT */}
+        <section id="contact" className="section contact-section">
+          <div className="contact-left">
+          <div className="section-label">— Hubungi</div>
+          <h2 className="contact-title">Mari <span className="gradient-text">Bekerja Sama</span></h2>
+          <p className="contact-desc">
+            Punya proyek menarik? Atau hanya ingin ngobrol santai tentang teknologi?
+            Saya selalu terbuka untuk diskusi dan kolaborasi baru.
+          </p>
+          <div className="contact-info-list">
+            <div className="contact-info-item">
+              <div className="ci-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                  <line x1="22" y1="7" x2="12" y2="13" />
+                  <line x1="2" y1="7" x2="12" y2="13" />
+                </svg>
+              </div>
+              <div>
+                <div className="ci-label">Email</div>
+                <div className="ci-val">mochamadikhsyankamil@gmail.com</div>
+              </div>
+            </div>
 
-      {/* TAMBAHKAN INSTAGRAM */}
-      <div className="contact-info-item">
-        <div className="ci-icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <rect x="2" y="2" width="20" height="20" rx="4" ry="4"/>
-            <circle cx="12" cy="12" r="4"/>
-            <line x1="18" y1="6" x2="18.01" y2="6"/>
-          </svg>
-        </div>
-        <div>
-          <div className="ci-label">Instagram</div>
-          <div className="ci-val">@itsyan__</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <ContactForm />
-</section>
+            <div className="contact-info-item">
+              <div className="ci-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.574 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+              </div>
+              <div>
+                <div className="ci-label">Telepon</div>
+                <div className="ci-val">+62 89538 3385 800</div>
+              </div>
+            </div>
+
+            {/* TAMBAHKAN INSTAGRAM */}
+            <div className="contact-info-item">
+              <div className="ci-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <rect x="2" y="2" width="20" height="20" rx="4" ry="4" />
+                  <circle cx="12" cy="12" r="4" />
+                  <line x1="18" y1="6" x2="18.01" y2="6" />
+                </svg>
+              </div>
+              <div>
+                <div className="ci-label">Instagram</div>
+                <div className="ci-val">@itsyan__</div>
+              </div>
+            </div>
+          </div>
+         </div>
+        <ContactForm />
+      </section>
 
       {/* FOOTER */}
       <footer className="footer">
@@ -927,8 +935,8 @@ export default function App() {
           <div className="footer-brand">Dev<span className="gradient-text">Folio</span></div>
           <p>&copy; 2024 Mochamad Ikhsyan Kamil. All rights reserved.</p>
           <div className="footer-links">
-            <a href="#">GitHub</a>
-            <a href="#">LinkedIn</a>
+            <a href="https://github.com/mochamad-ikhsyankamil23">GitHub</a>
+            <a href="https://www.linkedin.com/public-profile/settings/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact_info%3B8DkwL2WESkygEtzqZEE11A%3D%3D">LinkedIn</a>
             <a href="#">Instagram</a>
           </div>
         </div>
