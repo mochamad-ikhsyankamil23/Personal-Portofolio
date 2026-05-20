@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import "./App.css";
-import profilePhoto from "./assets/profile.jpg";
+import profilePhoto from "./assets/profile.JPG";
 
 // ── DATA ──────────────────────────────────────────────────────────────────────
 const SKILLS = [
