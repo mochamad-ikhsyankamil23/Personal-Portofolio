@@ -223,7 +223,7 @@ const CERTIFICATES_RAW = [
   { id: 6, title: "Dasar Pemograman", issuer: "Dicoding", year: "2026", yearNum: 2026, color: "#8b5cf6", image: "/certificates/Dicoding/DICODING-DASAR-PEMOGRAMAN_0003.jpg", subCerts: [{ id: "6-1", title: "Dasar Pemograman", image: "/certificates/Dicoding/DICODING-DASAR-PEMOGRAMAN_0003.jpg" }] },
   { id: 7, title: "Financial Literacy", issuer: "Dicoding", year: "2026", yearNum: 2026, color: "#8b5cf6", image: "/certificates/Dicoding/DICODING-FINANCIAL-LITERACY_0004.jpg", subCerts: [{ id: "7-1", title: "Financial Literacy", image: "/certificates/Dicoding/DICODING-FINANCIAL-LITERACY_0004.jpg" }] },
   { id: 8, title: "Pemograman SOLID", issuer: "Dicoding", year: "2026", yearNum: 2026, color: "#ef4444", image: "/certificates/Dicoding/DICODING-PRINSIP-PEMOGRAMAN-SOLID_0005.jpg", subCerts: [{ id: "8-1", title: "Pemograman SOLID", image: "/certificates/Dicoding/DICODING-PRINSIP-PEMOGRAMAN-SOLID_0005.jpg" }] },
-  { id: 9, title: "Dasar Manajement Project", issuer: "DICODING", year: "2026", yearNum: 2026, color: "#f59e0b", image: "/certificates/Dicoding/DICODING-DASAR-MANAJEMENT-PROJECT_0006.jpg", subCerts: [{ id: "9-1", title: "Dasar Manajement Project", image: "/certificates/Dicoding/DICODING-DASAR-MANAJEMENT-PROJECT_0006.jpg" }] },
+  { id: 9, title: "Dasar Management Project", issuer: "DICODING", year: "2026", yearNum: 2026, color: "#f59e0b", image: "/certificates/Dicoding/DICODING-DASAR-MANAJEMENT-PROJECT_0006.jpg", subCerts: [{ id: "9-1", title: "Dasar Management Project", image: "/certificates/Dicoding/DICODING-DASAR-MANAJEMENT-PROJECT_0006.jpg" }] },
   { id: 10, title: "Dasar Pemograman Java Script", issuer: "DICODING", year: "2026", yearNum: 2026, color: "#10b981", image: "/certificates/Dicoding/DICODING-DASAR-PEMOGRAMAN-JAVASCRIPT_0007.jpg", subCerts: [{ id: "10-1", title: "Dasar Pemograman Java Script", image: "/certificates/Dicoding/DICODING-DASAR-PEMOGRAMAN-JAVASCRIPT_0007.jpg" }] },
 ];
 
@@ -855,7 +855,7 @@ const AppContent = () => {
       </section>
 
       {/* FOOTER */}
-      <footer className="footer"><div className="footer-inner"><div className="footer-left"><div className="footer-brand">Dev<span className="gradient-text">Folio</span></div><p>&copy; 2024 Mochamad Ikhsyan Kamil. {t("allRights")}</p></div><div className="footer-right"><a href="https://github.com/mochamad-ikhsyankamil23">GitHub</a><a href="https://www.linkedin.com/in/ikhsyan-kamil-8689272a3" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://www.instagram.com/itsyan__" target="_blank" rel="noreferrer">Instagram</a></div></div></footer>
+      <footer className="footer"><div className="footer-inner"><div className="footer-left"><div className="footer-brand">Dev<span className="gradient-text">Folio</span></div><p>&copy; 2026 Mochamad Ikhsyan Kamil. {t("allRights")}</p></div><div className="footer-right"><a href="https://github.com/mochamad-ikhsyankamil23">GitHub</a><a href="https://www.linkedin.com/in/ikhsyan-kamil-8689272a3" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://www.instagram.com/itsyan__" target="_blank" rel="noreferrer">Instagram</a></div></div></footer>
     </div>
   );
 };
