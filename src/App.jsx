@@ -805,7 +805,7 @@ const AppContent = () => {
             <div className="bento-card bento-profile">
               <div className="bento-profile-glow" />
               <div className="bento-photo-wrap"><img src={profilePhoto} alt="Foto Profil" className="bento-photo" /><div className="bento-status-dot" /></div>
-              <h3 className="bento-name">Mochamad Ikhsyan</h3>
+              <h3 className="bento-name">Mochamad Ikhsyan Kamil</h3>
               <div className="bento-role-pill"><span className="bento-role-dot" />{t("fullStack")} {t("developer")}</div>
               <div className="bento-divider" />
               <div className="bento-social-col">
