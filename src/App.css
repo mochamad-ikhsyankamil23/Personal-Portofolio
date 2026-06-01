@@ -1,6 +1,33 @@
 /* ── RESET & VARIABLES ─────────────────────────────────────────────────────── */
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap');
 
+/* ===== FIX HORIZONTAL SCROLL ===== */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Pastikan section tidak kelebihan lebar */
+.section, .hero, .container, .about-bento, .contact-section {
+  overflow-x: hidden;
+}
+
+/* Perbaiki carousel agar tidak overflow */
+.carousel-track-container,
+.project-grid-wrapper,
+.cert-grid-wrapper {
+  overflow-x: hidden;
+}
+
+.carousel-track {
+  overflow-x: visible;
+}
+
 :root {
   --bg: #09090b;
   --bg2: #111114;
@@ -49,7 +76,7 @@ a { text-decoration: none; color: inherit; }
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  align-items: center;
+-align-items: center;
   gap: 32px;
 }
 .nav-brand {
@@ -130,6 +157,7 @@ a { text-decoration: none; color: inherit; }
   padding-left: 24px;
   padding-right: 24px;
   position: relative;
+  overflow-x: hidden;
 }
 .hero-bg-grid {
   position: fixed;
@@ -1412,7 +1440,7 @@ a { text-decoration: none; color: inherit; }
   margin: 0 auto;
   padding: 0 2rem;
   display: flex;
-  justify-content: space-between; /* Membedakan kiri dan kanan */
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
@@ -1434,9 +1462,8 @@ a { text-decoration: none; color: inherit; }
 }
 
 .footer-right a:hover {
-  color: #00adb5; /* Atau warna gradasi sesuai tema */
+  color: #00adb5;
 }
-
 
 /* ── ANIMATIONS ────────────────────────────────────────────────────────────── */
 @keyframes fadeUp {
@@ -1481,7 +1508,6 @@ a { text-decoration: none; color: inherit; }
   .avatar-glow-ring.ring2 { width: 218px; height: 218px; }
   .avatar-photo-wrap { width: 180px; height: 180px; }
 
-  /* Bento grid stacks on tablet */
   .about-bento {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -1522,6 +1548,11 @@ a { text-decoration: none; color: inherit; }
     border-bottom: 1px solid var(--border);
     gap: 4px;
   }
+  
+  /* Sembunyikan floating badge di mobile untuk mencegah overflow */
+  .floating-badge {
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1534,13 +1565,14 @@ a { text-decoration: none; color: inherit; }
   .contact-section { padding: 24px 16px; }
   .bento-stats-row { flex-wrap: wrap; }
   .bento-stat { min-width: 60px; }
+  .hero-visual { width: 200px; height: 200px; }
+  .avatar-glow-ring, .avatar-glow-ring.ring2 { width: 150px; height: 150px; }
+  .avatar-photo-wrap { width: 130px; height: 130px; }
 }
 
 /* ══════════════════════════════════════════════════════════
-   PROJECT CAROUSEL SLIDER STYLES (TENGAH BAWAH - SAMA DENGAN SERTIFIKAT)
+   PROJECT CAROUSEL SLIDER STYLES
 ══════════════════════════════════════════════════════════ */
-
-/* ── PROJECT CAROUSEL WRAPPER ── */
 .projects-carousel-container {
   width: 100%;
 }
@@ -1558,7 +1590,6 @@ a { text-decoration: none; color: inherit; }
   margin-top: 20px;
 }
 
-/* Slider Controls - Posisi Tengah Bawah (sama persis dengan sertifikat) */
 .project-slider-controls {
   display: flex;
   align-items: center;
@@ -1568,7 +1599,6 @@ a { text-decoration: none; color: inherit; }
   padding: 16px 0;
 }
 
-/* ── CERTIFICATE CAROUSEL SLIDER STYLES (TENGAH BAWAH) ── */
 .certs-carousel-container {
   width: 100%;
 }
@@ -1586,7 +1616,6 @@ a { text-decoration: none; color: inherit; }
   margin-top: 20px;
 }
 
-/* Slider Controls - Posisi Tengah Bawah */
 .cert-slider-controls {
   display: flex;
   align-items: center;
@@ -1596,7 +1625,6 @@ a { text-decoration: none; color: inherit; }
   padding: 16px 0;
 }
 
-/* Navigasi Button (sama untuk portfolio dan sertifikat) */
 .slider-nav-btn {
   width: 44px;
   height: 44px;
@@ -1622,7 +1650,6 @@ a { text-decoration: none; color: inherit; }
   cursor: not-allowed;
 }
 
-/* Dot Indicators (sama untuk portfolio dan sertifikat) */
 .slider-dots {
   display: flex;
   align-items: center;
@@ -1652,7 +1679,6 @@ a { text-decoration: none; color: inherit; }
   box-shadow: 0 0 8px var(--accent);
 }
 
-/* ── GROUP BADGE di thumbnail card ── */
 .cc-group-badge {
   position: absolute;
   top: 10px; right: 10px;
@@ -1668,13 +1694,11 @@ a { text-decoration: none; color: inherit; }
   backdrop-filter: blur(4px);
 }
 
-/* ── CC COUNT TAG di footer card ── */
 .cc-count-tag {
   font-size: 0.7rem;
   font-weight: 600;
 }
 
-/* ── ZOOM — ZoomableImage ── */
 .zoom-wrapper {
   position: relative;
   width: 100%;
@@ -1684,7 +1708,6 @@ a { text-decoration: none; color: inherit; }
   align-items: stretch;
 }
 
-/* toolbar zoom */
 .zoom-controls {
   position: absolute;
   bottom: 12px;
@@ -1724,7 +1747,6 @@ a { text-decoration: none; color: inherit; }
   letter-spacing: 0.02em;
 }
 
-/* scrollable canvas */
 .zoom-canvas {
   width: 100%;
   height: 100%;
@@ -1743,7 +1765,6 @@ a { text-decoration: none; color: inherit; }
   object-fit: contain;
 }
 
-/* hint text when zoomed */
 .zoom-hint {
   position: absolute;
   top: 10px;
@@ -1760,7 +1781,6 @@ a { text-decoration: none; color: inherit; }
   z-index: 5;
 }
 
-/* ── THUMBNAIL STRIP (group mode) ── */
 .cm-strip--thumbs {
   gap: 6px;
   padding: 10px 16px 14px;
@@ -1807,7 +1827,6 @@ a { text-decoration: none; color: inherit; }
   justify-content: center;
 }
 
-/* number overlay on thumb */
 .cm-strip-label {
   position: absolute;
   bottom: 1px; right: 3px;
@@ -1818,7 +1837,6 @@ a { text-decoration: none; color: inherit; }
   pointer-events: none;
 }
 
-/* Tooltip untuk micro cert */
 .cm-counter {
   font-size: 0.78rem;
   color: var(--text-muted);
@@ -1829,7 +1847,6 @@ a { text-decoration: none; color: inherit; }
   font-weight: 500;
 }
 
-/* Thumbnail strip scrollbar */
 .cm-strip--thumbs::-webkit-scrollbar-track {
   background: var(--surface2);
   border-radius: 2px;
@@ -1840,12 +1857,10 @@ a { text-decoration: none; color: inherit; }
   border-radius: 2px;
 }
 
-/* Modal animation improvements */
 .cm-box {
   animation: scaleIn 0.28s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-/* Generated certificate in modal */
 .cm-generated {
   background: linear-gradient(135deg, #0d0d1a 0%, #0f1626 50%, #0a1520 100%);
   border-radius: 16px;
@@ -1858,8 +1873,7 @@ a { text-decoration: none; color: inherit; }
   padding: 1rem 1.25rem;
   box-sizing: border-box;
 }
-/* ── LANGUAGE TOGGLE BUTTON ────────────────────────────────────────────────────── */
-/* ── LANGUAGE TOGGLE BUTTON ────────────────────────────────────────────────────── */
+
 .lang-toggle {
   background: var(--surface2);
   border: 1px solid var(--border);
@@ -1897,7 +1911,6 @@ a { text-decoration: none; color: inherit; }
   font-size: 0.7rem;
 }
 
-/* Responsive untuk kedua slider */
 @media (max-width: 900px) {
   .project-grid,
   .cert-grid {
@@ -1944,7 +1957,6 @@ a { text-decoration: none; color: inherit; }
   .cm-strip-thumb { width: 44px; height: 34px; }
 }
 
-/* Responsive modal */
 @media (max-width: 600px) {
   .cm-box {
     max-height: 95vh;
